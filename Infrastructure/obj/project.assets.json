@@ -834,11 +834,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\RnD\\WebApp\\UserManagement\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "C:\\Projects\\RnD\\AgreementDemo\\Infrastructure\\Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "C:\\Projects\\RnD\\WebApp\\UserManagement\\Infrastructure\\Infrastructure.csproj",
+      "projectPath": "C:\\Projects\\RnD\\AgreementDemo\\Infrastructure\\Infrastructure.csproj",
       "packagesPath": "C:\\Users\\VDARJI\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\RnD\\WebApp\\UserManagement\\Infrastructure\\obj\\",
+      "outputPath": "C:\\Projects\\RnD\\AgreementDemo\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\VDARJI\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -855,8 +855,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Projects\\RnD\\WebApp\\UserManagement\\Domains\\Domains.csproj": {
-              "projectPath": "C:\\Projects\\RnD\\WebApp\\UserManagement\\Domains\\Domains.csproj"
+            "C:\\Projects\\RnD\\AgreementDemo\\Domains\\Domains.csproj": {
+              "projectPath": "C:\\Projects\\RnD\\AgreementDemo\\Domains\\Domains.csproj"
             }
           }
         }

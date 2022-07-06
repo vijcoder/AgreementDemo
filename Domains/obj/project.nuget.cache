@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YzHiUxGkFsrvecy0qyeWhX2BO6fId5Zs2XwZ5uOhtXOWiH02oN8fsSELD854RNLkt0AristSiXF7fiDa2FAWUg==",
+  "dgSpecHash": "pQHfB0RfQ37Bdk67EynzzgKCDuiYimvzlEQq3DdKvQnUjL8geMvKQ+//g5KIpt4VSyTNtZR9Qf9gz8V65pDXEQ==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\RnD\\WebApp\\UserManagement\\Domains\\Domains.csproj",
+  "projectFilePath": "C:\\Projects\\RnD\\AgreementDemo\\Domains\\Domains.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

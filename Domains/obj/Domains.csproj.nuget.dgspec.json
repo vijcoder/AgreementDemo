@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\RnD\\WebApp\\UserManagement\\Domains\\Domains.csproj": {}
+    "C:\\Projects\\RnD\\AgreementDemo\\Domains\\Domains.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\RnD\\WebApp\\UserManagement\\Domains\\Domains.csproj": {
+    "C:\\Projects\\RnD\\AgreementDemo\\Domains\\Domains.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\RnD\\WebApp\\UserManagement\\Domains\\Domains.csproj",
+        "projectUniqueName": "C:\\Projects\\RnD\\AgreementDemo\\Domains\\Domains.csproj",
         "projectName": "Domains",
-        "projectPath": "C:\\Projects\\RnD\\WebApp\\UserManagement\\Domains\\Domains.csproj",
+        "projectPath": "C:\\Projects\\RnD\\AgreementDemo\\Domains\\Domains.csproj",
         "packagesPath": "C:\\Users\\VDARJI\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\RnD\\WebApp\\UserManagement\\Domains\\obj\\",
+        "outputPath": "C:\\Projects\\RnD\\AgreementDemo\\Domains\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\VDARJI\\AppData\\Roaming\\NuGet\\NuGet.Config",

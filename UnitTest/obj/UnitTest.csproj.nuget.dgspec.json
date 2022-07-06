@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\RnD\\WebApp\\UserManagement\\UnitTest\\UnitTest.csproj": {}
+    "C:\\Projects\\RnD\\AgreementDemo\\UnitTest\\UnitTest.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\RnD\\WebApp\\UserManagement\\Domains\\Domains.csproj": {
+    "C:\\Projects\\RnD\\AgreementDemo\\Domains\\Domains.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\RnD\\WebApp\\UserManagement\\Domains\\Domains.csproj",
+        "projectUniqueName": "C:\\Projects\\RnD\\AgreementDemo\\Domains\\Domains.csproj",
         "projectName": "Domains",
-        "projectPath": "C:\\Projects\\RnD\\WebApp\\UserManagement\\Domains\\Domains.csproj",
+        "projectPath": "C:\\Projects\\RnD\\AgreementDemo\\Domains\\Domains.csproj",
         "packagesPath": "C:\\Users\\VDARJI\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\RnD\\WebApp\\UserManagement\\Domains\\obj\\",
+        "outputPath": "C:\\Projects\\RnD\\AgreementDemo\\Domains\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\VDARJI\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -58,14 +58,14 @@
         }
       }
     },
-    "C:\\Projects\\RnD\\WebApp\\UserManagement\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Projects\\RnD\\AgreementDemo\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\RnD\\WebApp\\UserManagement\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Projects\\RnD\\AgreementDemo\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Projects\\RnD\\WebApp\\UserManagement\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "C:\\Projects\\RnD\\AgreementDemo\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\VDARJI\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\RnD\\WebApp\\UserManagement\\Infrastructure\\obj\\",
+        "outputPath": "C:\\Projects\\RnD\\AgreementDemo\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\VDARJI\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -82,8 +82,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Projects\\RnD\\WebApp\\UserManagement\\Domains\\Domains.csproj": {
-                "projectPath": "C:\\Projects\\RnD\\WebApp\\UserManagement\\Domains\\Domains.csproj"
+              "C:\\Projects\\RnD\\AgreementDemo\\Domains\\Domains.csproj": {
+                "projectPath": "C:\\Projects\\RnD\\AgreementDemo\\Domains\\Domains.csproj"
               }
             }
           }
@@ -122,14 +122,14 @@
         }
       }
     },
-    "C:\\Projects\\RnD\\WebApp\\UserManagement\\UnitTest\\UnitTest.csproj": {
+    "C:\\Projects\\RnD\\AgreementDemo\\UnitTest\\UnitTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\RnD\\WebApp\\UserManagement\\UnitTest\\UnitTest.csproj",
+        "projectUniqueName": "C:\\Projects\\RnD\\AgreementDemo\\UnitTest\\UnitTest.csproj",
         "projectName": "UnitTest",
-        "projectPath": "C:\\Projects\\RnD\\WebApp\\UserManagement\\UnitTest\\UnitTest.csproj",
+        "projectPath": "C:\\Projects\\RnD\\AgreementDemo\\UnitTest\\UnitTest.csproj",
         "packagesPath": "C:\\Users\\VDARJI\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\RnD\\WebApp\\UserManagement\\UnitTest\\obj\\",
+        "outputPath": "C:\\Projects\\RnD\\AgreementDemo\\UnitTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\VDARJI\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -146,8 +146,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Projects\\RnD\\WebApp\\UserManagement\\UserManagement\\UserManagement.csproj": {
-                "projectPath": "C:\\Projects\\RnD\\WebApp\\UserManagement\\UserManagement\\UserManagement.csproj"
+              "C:\\Projects\\RnD\\AgreementDemo\\UserManagement\\UserManagement.csproj": {
+                "projectPath": "C:\\Projects\\RnD\\AgreementDemo\\UserManagement\\UserManagement.csproj"
               }
             }
           }
@@ -202,14 +202,14 @@
         }
       }
     },
-    "C:\\Projects\\RnD\\WebApp\\UserManagement\\UserManagement\\UserManagement.csproj": {
+    "C:\\Projects\\RnD\\AgreementDemo\\UserManagement\\UserManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\RnD\\WebApp\\UserManagement\\UserManagement\\UserManagement.csproj",
+        "projectUniqueName": "C:\\Projects\\RnD\\AgreementDemo\\UserManagement\\UserManagement.csproj",
         "projectName": "UserManagement",
-        "projectPath": "C:\\Projects\\RnD\\WebApp\\UserManagement\\UserManagement\\UserManagement.csproj",
+        "projectPath": "C:\\Projects\\RnD\\AgreementDemo\\UserManagement\\UserManagement.csproj",
         "packagesPath": "C:\\Users\\VDARJI\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\RnD\\WebApp\\UserManagement\\UserManagement\\obj\\",
+        "outputPath": "C:\\Projects\\RnD\\AgreementDemo\\UserManagement\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\VDARJI\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -226,11 +226,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Projects\\RnD\\WebApp\\UserManagement\\Domains\\Domains.csproj": {
-                "projectPath": "C:\\Projects\\RnD\\WebApp\\UserManagement\\Domains\\Domains.csproj"
+              "C:\\Projects\\RnD\\AgreementDemo\\Domains\\Domains.csproj": {
+                "projectPath": "C:\\Projects\\RnD\\AgreementDemo\\Domains\\Domains.csproj"
               },
-              "C:\\Projects\\RnD\\WebApp\\UserManagement\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Projects\\RnD\\WebApp\\UserManagement\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Projects\\RnD\\AgreementDemo\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Projects\\RnD\\AgreementDemo\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }

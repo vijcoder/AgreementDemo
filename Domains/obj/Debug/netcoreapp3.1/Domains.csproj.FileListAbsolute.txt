@@ -15,3 +15,12 @@ C:\Projects\RnD\WebApp\UserManagement\Domains\obj\Debug\netcoreapp3.1\Domains.As
 C:\Projects\RnD\WebApp\UserManagement\Domains\obj\Debug\netcoreapp3.1\Domains.csproj.CoreCompileInputs.cache
 C:\Projects\RnD\WebApp\UserManagement\Domains\obj\Debug\netcoreapp3.1\Domains.dll
 C:\Projects\RnD\WebApp\UserManagement\Domains\obj\Debug\netcoreapp3.1\Domains.pdb
+C:\Projects\RnD\AgreementDemo\Domains\bin\Debug\netcoreapp3.1\Domains.deps.json
+C:\Projects\RnD\AgreementDemo\Domains\bin\Debug\netcoreapp3.1\Domains.dll
+C:\Projects\RnD\AgreementDemo\Domains\bin\Debug\netcoreapp3.1\Domains.pdb
+C:\Projects\RnD\AgreementDemo\Domains\obj\Debug\netcoreapp3.1\Domains.csproj.AssemblyReference.cache
+C:\Projects\RnD\AgreementDemo\Domains\obj\Debug\netcoreapp3.1\Domains.AssemblyInfoInputs.cache
+C:\Projects\RnD\AgreementDemo\Domains\obj\Debug\netcoreapp3.1\Domains.AssemblyInfo.cs
+C:\Projects\RnD\AgreementDemo\Domains\obj\Debug\netcoreapp3.1\Domains.csproj.CoreCompileInputs.cache
+C:\Projects\RnD\AgreementDemo\Domains\obj\Debug\netcoreapp3.1\Domains.dll
+C:\Projects\RnD\AgreementDemo\Domains\obj\Debug\netcoreapp3.1\Domains.pdb
