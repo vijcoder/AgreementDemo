@@ -1,0 +1,95 @@
+﻿@model Domains.ViewModels.AgreementViewModel
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@{
+    var userid = User.Identity.Name;
+}
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+@using (Html.BeginForm("AddEditAgreement", "Home", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+<div class="form-horizontal">
+    <hr />
+    @Html.ValidationSummary(true)
+    <div>
+        @Html.HiddenFor(u => u.Id, new { @id = "Id" })
+    </div>
+    <div class="form-group">
+        @Html.Label("", "Select Project Group", new { @class = "control-label col-sm-12" })
+        <div class="col-sm-12">
+            @Html.DropDownList("ProductGroupId", ViewBag.ProjectGroup as
+IEnumerable<SelectListItem>, "-Select-", new { @id = "ProductGroupId", @class = "form-control" })
+            @Html.HiddenFor(m => m.ProductGroupId)
+            @Html.ValidationMessageFor(model => model.ProductGroupId)
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.Label("", "Select Project", new { @class = "control-label col-sm-12" })
+        <div class="col-sm-12">
+            @Html.DropDownList("ProductId", ViewBag.Project as
+IEnumerable<SelectListItem>, "-Select-", new { @id = "ProductId", @class = "form-control" })
+            @Html.HiddenFor(m => m.ProductId)
+            @Html.ValidationMessageFor(model => model.ProductId)
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.Label("", "Select User", new { @class = "control-label col-sm-12" })
+        <div class="col-sm-12">
+            @Html.DropDownList("UserId", ViewBag.UserList as
+IEnumerable<SelectListItem>, "-Select-", new { @id = "UserId", @class = "form-control" })
+            @Html.HiddenFor(m => m.UserId)
+            @Html.ValidationMessageFor(model => model.UserId)
+        </div>
+    </div>
+    @*<div class="form-group">
+            @Html.Label("", "User", new { @class = "control-label col-sm-2" })
+            <div class="col-sm-8">
+                @Html.EditorFor(model => model.UserId)
+                @Html.ValidationMessageFor(model => model.UserId)
+            </div>
+        </div>*@
+    <div class="form-group">
+        @Html.Label("", "EffectiveDate", new { @class = "control-label col-sm-2" })
+        <div class="col-sm-8">
+            @Html.EditorFor(model => model.EffectiveDate)
+            @Html.ValidationMessageFor(model => model.EffectiveDate)
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.Label("", "ExpirationDate", new { @class = "control-label col-sm-2" })
+        <div class="col-sm-8">
+            @Html.EditorFor(model => model.ExpirationDate)
+            @Html.ValidationMessageFor(model => model.ExpirationDate)
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.Label("", "ProductPrice", new { @class = "control-label col-sm-2" })
+        <div class="col-sm-8">
+            @Html.EditorFor(model => model.ProductPrice)
+            @Html.ValidationMessageFor(model => model.ProductPrice)
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.Label("", "NewPrice", new { @class = "control-label col-sm-2" })
+        <div class="col-sm-8">
+            @Html.EditorFor(model => model.NewPrice)
+            @Html.ValidationMessageFor(model => model.NewPrice)
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.Label("", "IsActive", new { @class = "control-label col-sm-2" })
+        <div class="col-sm-8">
+            @Html.CheckBoxFor(model => model.IsActive) 
+        </div>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Submit" />
+    </div>
+</div>
+}

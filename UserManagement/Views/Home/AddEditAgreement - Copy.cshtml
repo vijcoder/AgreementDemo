@@ -1,0 +1,27 @@
+﻿@model Domains.ViewModels.AgreementViewModel
+ 
+
+<div>test form</div>
+
+@*<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+test
+@using (Html.BeginForm("Home", "Insert", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+        <h4>Add Site Details</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+        <div class="form-group">
+            @Html.Label("", "Select Project Group", new { @class = "control-label col-sm-2" })
+            <div class="col-sm-4">
+                @Html.DropDownList("ProductGroup", ViewBag.ProjectGroup as
+IEnumerable<SelectListItem>, "-Select-", new { @id = "ClientId", @class = "form-control" })
+                @Html.HiddenFor(m => m.ProductGroupId)
+                @Html.ValidationMessageFor(model => model.ProductGroupId)
+            </div>
+        </div>
+    </div>
+}*@

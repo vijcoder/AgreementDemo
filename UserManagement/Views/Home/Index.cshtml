@@ -1,0 +1,160 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdn.datatables.net/responsive/2.1.1/css/responsive.bootstrap.min.css" rel="stylesheet" />
+
+<script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap4.min.js "></script>
+ 
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">New Agreement</button>
+
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header"> 
+                <h4 class="modal-title">Agreement</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                @Html.Partial("AddEditAgreement")
+            </div>             
+        </div>
+    </div>
+</div>
+
+<table id="table_id" class="display">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>UserId</th>
+            @*<th>GroupId</th>
+            <th>ProductId</th>*@
+            <th>GroupDescription</th>
+            <th>ProductDescription</th>
+            <th>EffectiveDate</th>
+            <th>ExpirationDate</th>
+            <th>ProductPrice</th>
+            <th>NewPrice</th>
+            <th>IsActive</th>
+            @*<th>WhenEntered</th>*@
+            <th>Edit</th>
+            <th>Delete</th>
+
+        </tr>
+    </thead>
+</table>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link href="~/DataTables/datatables.min.css" rel="stylesheet" />
+<link href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdn.datatables.net/responsive/2.1.1/css/responsive.bootstrap.min.css" rel="stylesheet" />
+
+<script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap4.min.js "></script>
+
+<script>
+
+        $("#table_id").dataTable({
+
+            "processing": true, // for show progress bar
+            "serverSide": true, // for process server side
+            "filter": true, // this is for disable filter (search box)
+            "orderMulti": false, // for disable multiple column at once
+            "pageLength": 5,
+
+            "ajax": {
+                "url": "/Home/GetAgreements",
+                "type": "POST",
+                "datatype": "json" 
+            },
+
+            "columnDefs":
+                [{
+                    "targets": [0],
+                    "visible": false,
+                    "searchable": false
+                } 
+                ],
+
+            "columns": [
+                { "data": "id", "name": "id", "autoWidth": true },
+                { "data": "userId", "name": "UserId", "autoWidth": true },
+                { "data": "groupDescription", "name": "GroupDescription", "autoWidth": true },
+                { "data": "productDescription", "title": "ProductDescription", "name": "ContactName", "autoWidth": true },
+                { "data": "effectiveDate", "name": "EffectiveDate", "autoWidth": true },
+                { "data": "expirationDate", "name": "ExpirationDate", "autoWidth": true },
+                { "data": "productPrice", "name": "ProductPrice", "autoWidth": true },
+                { "data": "newPrice", "name": "NewPrice", "autoWidth": true },
+                { "data": "isActive", "name": "IsActive", "title": "Status", "autoWidth": true }
+                ,{
+                    //"render": function (data, type, full, meta) { return '<a class="btn btn-info" data-target="#myModal" href="/Home/Edit/' + full.id + '">Edit</a>'; }
+                    "render": function (data, type, full, meta) { return '<a class="btn btn-info" onclick="GetDetails(' + full.id + ')">Edit</a>'; }
+                },
+                {
+                    data: null, render: function (data, type, row) {
+                        return "<a href='#' class='btn btn-danger' onclick=DeleteData('" + row.id + "'); >Delete</a>";
+                    }
+                },
+            ]
+        });
+    function DeleteData(CustomerID) {
+        if (confirm("Are you sure you want to delete ...?")) {
+            Delete(CustomerID);
+        }
+        else {
+            return false;
+        }
+    }
+
+
+    function Delete(CustomerID) {
+        var url = '@Url.Content("~/")' + "Home/DeleteAgreement";
+        $.post(url, { ID: CustomerID }, function (data) {
+            if (data == "Deleted") {
+                alert("Customer deleted successfully.");
+                location.reload();
+            }
+            else {
+                alert("Something Went Wrong!");
+            }
+        });
+    }
+
+    function GetDetails(id) {
+        $.ajax({
+            url: "/Home/Edit/" + id,
+            typr: "GET",
+            contentType: "application/json;charset=UTF-8",
+            dataType: "json",
+            success: function (response) { 
+                $('#myModal').modal('show');
+                $("#Id").val(response.Id);
+                $("#ProductGroupId").val(response.productGroupId);
+                $("#ProductId").val(response.productId);
+                $("#UserId").val(response.userId);
+                $("#EffectiveDate").val(response.effectiveDate);
+
+                $("#ExpirationDate").val(response.expirationDate);
+                $("#ProductPrice").val(response.productPrice);
+                $("#NewPrice").val(response.newPrice);
+                $("#IsActive").prop("checked", response.isActive);
+              
+
+            },
+            error: function (response) {
+                alert(response.responseText);
+            }
+        });
+        return false;
+    }
+
+</script>
+
+ 
+
