@@ -12,7 +12,7 @@ namespace Infrastructure.Mappings
         {
             builder.HasKey(t => t.Id);
             builder.Property(t => t.GroupDescription).IsRequired();
-            builder.Property(t => t.GroupCode).IsRequired(); 
+            builder.Property(t => t.GroupCode).IsRequired();
 
             builder.Property(t => t.IsActive);
             builder.Property(t => t.WhenEntered);

@@ -38,7 +38,7 @@ namespace UserManagement.Controllers
                 p.GroupDescription,
                 p.Id
 
-            }).ToList(); 
+            }).ToList();
             ViewBag.ProjectGroup = listToClient.Select(i => new SelectListItem
             {
                 Text = i.GroupDescription,
@@ -50,7 +50,7 @@ namespace UserManagement.Controllers
             {
                 p.ProductDescription,
                 p.Id
-            }).ToList(); 
+            }).ToList();
             ViewBag.Project = listToProd.Select(i => new SelectListItem
             {
                 Text = i.ProductDescription,
@@ -62,7 +62,7 @@ namespace UserManagement.Controllers
             {
                 p.Email,
                 p.Id
-            }).ToList(); 
+            }).ToList();
             ViewBag.UserList = listOfUsers.Select(i => new SelectListItem
             {
                 Text = i.Email,
@@ -73,7 +73,7 @@ namespace UserManagement.Controllers
         }
 
         public IActionResult GetAgreements()
-        { 
+        {
             try
             {
                 //Creating instance of DatabaseContext class  
@@ -122,7 +122,7 @@ namespace UserManagement.Controllers
         }
 
         public IActionResult Insert()
-        { 
+        {
             return View("AddEditAgreement");
         }
         public async Task<IActionResult> Edit(int id)

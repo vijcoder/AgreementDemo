@@ -1,7 +1,4 @@
-﻿using UserManagement.Controllers;
-using Xunit;
-
-namespace UnitTest.Controller
+﻿namespace UnitTest.Controller
 {
     public class HomeControllerTest
     {

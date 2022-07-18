@@ -1,0 +1,27 @@
+services:
+  db:
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: 2Secure*Password2
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    ports:
+    - published: 1433
+      target: 1433
+  usermanagement:
+    build:
+      context: C:\Projects\RnD\AgreementDemo
+      dockerfile: UserManagement/Dockerfile
+    depends_on:
+      db:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: usermanagement
+    ports:
+    - target: 80
+    - target: 443
+    volumes:
+    - C:\Users\VDARJI\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\VDARJI\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+version: '3.4'

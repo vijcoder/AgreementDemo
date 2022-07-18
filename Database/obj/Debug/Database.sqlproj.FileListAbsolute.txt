@@ -1,10 +1,6 @@
 C:\Projects\RnD\AgreementDemo\Database\bin\Debug\Database.dacpac
-C:\Projects\RnD\AgreementDemo\Database\obj\Debug\Database.sqlproj.AssemblyReference.cache
-C:\Projects\RnD\AgreementDemo\Database\obj\Debug\Model.xml
-C:\Projects\RnD\AgreementDemo\Database\obj\Debug\refactor.xml
-C:\Projects\RnD\AgreementDemo\Database\obj\Debug\postdeploy.sql
-C:\Projects\RnD\AgreementDemo\Database\obj\Debug\predeploy.sql
 C:\Projects\RnD\AgreementDemo\Database\obj\Debug\Database.dll
 C:\Projects\RnD\AgreementDemo\Database\obj\Debug\Database.pdb
 C:\Projects\RnD\AgreementDemo\Database\bin\Debug\Database.dll
 C:\Projects\RnD\AgreementDemo\Database\bin\Debug\Database.pdb
+C:\Projects\RnD\AgreementDemo\Database\obj\Debug\Database.sqlproj.AssemblyReference.cache
